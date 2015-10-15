@@ -137,7 +137,7 @@ public class ExaShare extends AbstractUploader implements UploaderAccountNecessa
             mpEntity.addPart("fakefilepc", new StringBody(file.getName()));
             mpEntity.addPart("file_descr", new StringBody("Uploaded via Neembuu Uploader!"));
             mpEntity.addPart("file_category", new StringBody("0"));
-            mpEntity.addPart("file_public", new StringBody("1"));
+            mpEntity.addPart("file_public", new StringBody("0"));
             mpEntity.addPart("tos", new StringBody("1"));
             mpEntity.addPart("submit_btn", new StringBody("Upload!"));
             httpPost.setEntity(mpEntity);
